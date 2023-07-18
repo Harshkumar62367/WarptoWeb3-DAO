@@ -302,7 +302,10 @@ export default function Home() {
 
   if (!isConnected)
     return (
-      <div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', flexDirection: 'column'}}>
+        <div>
+          <h2 style={{ margin: '20px'}}>Connect your wallet and switch to Sepolia network</h2>
+        </div>
         <ConnectButton />
       </div>
     );
